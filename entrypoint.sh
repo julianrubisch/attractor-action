@@ -13,4 +13,6 @@ else
   gem install attractor -v "${INPUT_VERSION}"
 fi
 
+git log
+
 ruby /action/index.rb
