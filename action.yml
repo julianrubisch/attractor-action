@@ -10,7 +10,7 @@ inputs:
     description: 'Bundle your gemfile instead of doing a gem install'
     required: false
     default: 'false'
-  file-prefix:
+  file_prefix:
     description: 'Specify a directory'
     required: false
     default: ''
@@ -24,7 +24,7 @@ runs:
   args:
     - ${{ inputs.version }}
     - ${{ inputs.bundle }}
-    - ${{ inputs.file-prefix }}
+    - ${{ inputs.file_prefix }}
     - ${{ inputs.javascript }}
 env:
   GITHUB_TOKEN: secrets.GITHUB_TOKEN
