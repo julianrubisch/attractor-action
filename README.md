@@ -16,7 +16,7 @@ jobs:
         version: 'latest'
         bundle: 'false'
         file_prefix: 'app/models'
-        javascript: 'true'
+        javascript: '(true|false)'
     - name: Upload Artifact
       uses: actions/upload-artifact@v1
       if: success()
