@@ -3,6 +3,7 @@ command += " --file-prefix #{ENV['INPUT_FILE_PREFIX']}" unless ENV['INPUT_FILE_P
 command += " -t js" if ENV['INPUT_JAVASCRIPT'] == 'true'
 
 puts ENV['INPUT_FILE_PREFIX']
+puts ENV['INPUT_JAVASCRIPT']
 puts command
 
 system("#{command}")
