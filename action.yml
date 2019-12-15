@@ -10,7 +10,7 @@ inputs:
     description: 'Bundle your gemfile instead of doing a gem install'
     required: false
     default: 'false'
-  file_prefix:
+  file-prefix:
     description: 'Specify a directory'
     required: false
     default: ''
