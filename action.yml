@@ -24,7 +24,7 @@ runs:
   args:
     - ${{ inputs.version }}
     - ${{ inputs.bundle }}
-    - ${{ inputs.file_prefix }}
+    - ${{ inputs.file-prefix }}
     - ${{ inputs.javascript }}
 env:
   GITHUB_TOKEN: secrets.GITHUB_TOKEN
