@@ -1,4 +1,4 @@
-# Attractor Action
+# Attractor Action <img src="https://user-images.githubusercontent.com/4352208/65411858-3dc84200-ddee-11e9-99b6-c9cdbeb533c5.png" width="24">
 
 ## Table of Contents
 
