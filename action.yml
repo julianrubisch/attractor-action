@@ -15,7 +15,7 @@ inputs:
     required: false
     default: ''
   javascript:
-    description: 'Set this to true if you would like to check javascript too'
+    description: 'Set this to true if you would like to check javascript'
     required: false
     default: 'false'
 runs:
