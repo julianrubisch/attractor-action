@@ -1,5 +1,7 @@
 # Attractor Action <img src="https://user-images.githubusercontent.com/4352208/65411858-3dc84200-ddee-11e9-99b6-c9cdbeb533c5.png" width="24">
 
+A Github action to run an [Attractor](https://github.com/julianrubisch/attractor) report on your project.
+
 ## Table of Contents
 
   * [Usage](#usage)
@@ -23,6 +25,8 @@ Add the following to your GitHub action workflow to use Attractor Action:
 
 ## Example Workflow
 
+The workflow below simply saves the `attractor_output` directory to a build artifact.
+
 ```yml
 jobs:
   build:
@@ -45,6 +49,9 @@ jobs:
         name: attractor
         path: attractor_output
 ```
+
+Alternatively, you could upload it to an AWS bucket, deploy it on Netlify,... you name it! PRs documenting usage are very welcome!
+
 
 It's **compulsory** to set the `fetch-depth` attribute on the checkout action to `0`, otherwise only the `HEAD` commit will be fetched, rendering the `churn` output useless (we need the full history).
 
