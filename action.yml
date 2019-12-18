@@ -1,0 +1,33 @@
+name: 'Attractor Action'
+description: 'A GitHub Action that lets you easily run attractor.'
+author: 'Julian Rubisch <julian@julianrubisch.at>'
+inputs:
+  version:
+    description: 'Define a specific version of Attractor, otherwise uses latest'
+    required: false
+    default: 'latest'
+  bundle:
+    description: 'Bundle your gemfile instead of doing a gem install'
+    required: false
+    default: 'false'
+  file_prefix:
+    description: 'Specify a directory'
+    required: false
+    default: ''
+  javascript:
+    description: 'Set this to true if you would like to check javascript'
+    required: false
+    default: 'false'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.version }}
+    - ${{ inputs.bundle }}
+    - ${{ inputs.file_prefix }}
+    - ${{ inputs.javascript }}
+env:
+  GITHUB_TOKEN: secrets.GITHUB_TOKEN
+branding:
+  icon: 'code'
+  color: 'blue'
