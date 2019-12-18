@@ -13,6 +13,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "julianrubisch",
+      "name": "Julian Rubisch",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/4352208?v=4",
+      "profile": "http://www.julianrubisch.at",
+      "contributions": [
+        "doc"
+      ]
     }
   ],
   "contributorsPerLine": 7,
