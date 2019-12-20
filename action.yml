@@ -1,5 +1,5 @@
 name: 'Attractor Action'
-description: 'A GitHub Action that lets you easily run attractor.'
+description: 'A GitHub Action that lets you easily run attractor, a code quality exploration tool especially for Ruby on Rails.'
 author: 'Julian Rubisch <julian@julianrubisch.at>'
 inputs:
   version:
